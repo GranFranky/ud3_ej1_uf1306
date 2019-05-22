@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <title>UT3_Ejercicio 1_Validación al perder el foco</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class=container id="forms">
+        <h1 class="form-group row justify-content-md-center">Validar Formulario al perder el foco</h1>
+        <form action="#" method="POST">
+            <fieldset class="col-lg-10 col-form-label">
+                <div class="form-group row justify-content-md-center">
+
+                    <label for="Nombre" class="col-lg-10 col-form-label">Nombre:</label>
+                    <input type="text" id="campoNombre" class="form-control" placeholder="Introduzca su nombre"
+                        onblur="return validarNombre();"><span>valida1</span>
+                </div>
+                <div class="form-group row justify-content-md-center">
+
+                    <label for="Edad" class="col-lg-10 col-form-label">Edad:</label>
+                    <input type="text" id="campoEdad" class="form-control" placeholder="Introduzca su edad"
+                        onblur="return validarEdad();"><span>valida2</span>
+                </div>
+                <div class="form-group row justify-content-md-center">
+
+                    <label for="Ciudad" class="col-lg-10 col-form-label">Ciudad:</label>
+                    <input type="text" id="campoCiudad" class="form-control" placeholder="Introduzca su ciudad"
+                        onblur="return validarCiudad();"><span>valida3</span>
+                </div>
+                <div class="form-group row justify-content-md-center">
+
+                    <label for="Telefono" class="col-lg-10 col-form-label">Teléfono:</label>
+                    <input type="text" id="campoTelefono" class="form-control" placeholder="555 236596"
+                        onblur="return validarTelefono();"><span>valida4</span>
+                </div>
+                <div class="form-group row justify-content-md-center">
+                    <span></span>
+                    <input type="submit" value="Enviar Datos">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <script src="js/codigo.js"></script>
+</body>
+
+</html>
